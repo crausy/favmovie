@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedvenc filmem</title>
+    <style>
+        html
+        {
+            box-sizing: border-box;
+            background-color: tomato;
+            margin: 0;
+            padding: 0;
+        }
+        h1
+        {
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.02rem;
+            color: black;
+            font-size: 1.8rem;
+        }
+        #cimsor
+        {
+            font-size: 1.3rem;
+            text-transform: uppercase;
+        }
+        #szoveg
+        {
+            width: 80%;
+        }
+        #leiras
+        {
+            line-height: 1.3rem;
+            font-size: 1.1rem;
+        }
+        #borito
+        {
+            position: absolute;
+            right: 30px;
+            float: right;
+            width: 20%;
+            padding: 5px;
+            border-radius: 4%;
+        }
+        #cars, #szereplok
+        {
+            width: 50%;
+            font-size: 1rem;
+        }
+        #car-list, #cast-list
+        {
+            list-style-type: none;
+            line-height: 1.3rem;
+        }
+        li a
+        {
+            text-decoration: none;
+            font-style: none;
+            color: black;
+            font-size: 1.1rem;
+            transition: 0.3s ease-in-out;
+        }
+        li a:hover
+        {
+            color: indigo;
+            padding-left: 15px;
+        }
+        #table-div
+        {
+            width: 100%;
+        }
+        table
+        {
+            width: 40%;
+            margin: 0 auto;
+            border: 1px solid black;
+            font-size: 1.3rem;
+            line-height: 2rem;
+        }
+        td
+        {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .kiemel
+        {
+            font-weight: 900;
+        }
+
+        @media (max-width: 768px)
+        {
+            #szoveg
+            {
+                width: 100%;
+            }
+            #cars, #szereplok
+            {
+                width: 100%;
+                font-size: 1rem;
+            }
+            #borito
+            {
+                display: none;
+            }
+            #table
+            {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kedvenc filmem - halálos iramban</h1>
+    </header>
+    <div id="container">
+        <div id="szoveg">
+            <h3 id="cimsor">A film rövid bemutatása</h3>
+            <img src="fnf.jpg" alt="A film borítóképe" title="A film borítóképe" id="borito">
+            <blockquote cite="https://hu.wikipedia.org/wiki/Hal%C3%A1los_iramban_(filmsorozat)#Hal%C3%A1los_iramban" id="leiras">
+                Dominic az egyik vezéralakja a Los Angeles utcáin rendszeresen lezajló illegális autóversenyeknek. Ezeken a felturbózott járgányokkal felvonuló helyi vagány csávók bebizonyíthatják a csajoknak, hogy igenis van vér a pucájukban. Szuper kocsik száguldoznak az utakon, és ezt persze a helyi rendfenntartók nem nézik jó szemmel. Ebbe a világba csöppen bele az ifjú Brian. Igazi zöldfülűként nem rest versenyre hívni Dominicot. Senki sem sejti, hogy valójában egy álruhás zsaru, aki egy kamionokat fosztogató csapatot szeretne lekapcsolni. Valami azt súgja neki, Dominic és barátai körében kell keresnie az elkövetőket...
+            </blockquote>
+        </div>
+        <div id="szereplok">
+            <h3 id="cimsor">Főbb szereplők</h3>
+            <ul id="cast-list">
+                <li><a href="https://fastandfurious.fandom.com/wiki/Dominic_Toretto" target="blank">Dominic Toretto - Vin Diesel</a></li>
+                <li><a href="https://fastandfurious.fandom.com/wiki/Mia_Toretto" target="blank">Mia Toretto - Jordana Brewster</a></li>
+                <li><a href="https://fastandfurious.fandom.com/wiki/Brian_O%27Conner" target="blank">Brian O'Conner - Paul Walker</a></li>
+                <li><a href="https://fastandfurious.fandom.com/wiki/Brian_O%27Conner" target="blank">Letty Ortiz - Michelle Rodriguez</a></li>
+            </ul>
+        </div>
+        <div id="cars">
+            <h3 id="cimsor">A filmben szerplő autók</h3>
+            <ul id="car-list">
+                <li><a href="https://fastandfurious.fandom.com/wiki/1970_Chevrolet_Chevelle_SS" target="blank">1970 - Chevrolet Chevelle SS</a></li>
+                <li><a href="https://fastandfurious.fandom.com/wiki/1970_Dodge_Charger_R/T" target="blank">1970 - Dodge Charger R/T</a></li>
+                <li><a href="https://fastandfurious.fandom.com/wiki/1992_Honda_Civic_Hatchback" target="blank">1992 - Honda Civic Hatchback</a></li>
+                <li><a href="https://fastandfurious.fandom.com/wiki/1993_Honda_Civic_Coupe" target="blank">1993 - Honda Civic Coupe</a></li>
+                <li><a href="https://fastandfurious.fandom.com/wiki/1993_Honda_Civic_EJ1" target="blank">1993 - Honda Civic EJ1</a></li>
+                <li><a href="https://fastandfurious.fandom.com/wiki/1993_Mazda_RX-7" target="blank">1993 - Mazda RX-7</a></li>
+                <li><a href="https://fastandfurious.fandom.com/wiki/1994_Toyota_Supra_MK_IV" target="blank">1994 - Toyota Supra MK IV</a></li>
+                <li><a href="https://fastandfurious.fandom.com/wiki/1995_Mitsubishi_Eclipse" target="blank">1995 - Mitsubishi Eclipse</a></li>
+                <li><a href="https://fastandfurious.fandom.com/wiki/1995_Nissan_Skyline_GT-R_R33" target="blank">1995 - Nissan Skyline GT-R R33</a></li>
+                <li><a href="https://fastandfurious.fandom.com/wiki/1995_Volkswagen_Jetta" target="blank">1995 - Volkswagen Jetta</a></li>
+                <li><a href="https://fastandfurious.fandom.com/wiki/1997_Nissan_240SX" target="blank">1997 - Nissan 240SX</a></li>
+                <li><a href="https://fastandfurious.fandom.com/wiki/1999_Nissan_Maxima_(A32)" target="blank">1999 - Nissan Maxima A32</a></li>
+                <li><a href="https://fastandfurious.fandom.com/wiki/2000_Honda_S2000" target="blank">2000 - Honda S2000</a></li>
+                <li><a href="https://fastandfurious.fandom.com/wiki/Acura_Integra" target="blank">N/A  - Acura Integra</a></li>
+                <li><a href="https://fastandfurious.fandom.com/wiki/Ferrari_F355_Spider" target="blank">N/A  - Ferrari F355 Spider</a></li>
+                <li><a href="https://fastandfurious.fandom.com/wiki/Ford_F-150_SVT_Lightning" target="blank">N/A  - Ford F-150 SVT Lightning</a></li>
+            </ul>
+        </div>
+        <div id="table-div">
+            <table id="table">
+                <tr>
+                    <th colspan = "2" class="kiemel">Halálos iramban - 2001</th>
+                </tr>
+                <tr>
+                    <td class="kiemel">Megjelenés dátuma: </td>
+                    <td>2001. Június 22.</td>
+                </tr>
+                <tr>
+                    <td class="kiemel">Rendező: </td>
+                    <td>Rob Cohen</td>
+                </tr>
+                <tr>
+                    <td class="kiemel">Forgatókönyvet írták: </td>
+                    <td>Gary Scott Thompson, Erik Bergquist, David Ayer</td>
+                </tr>
+                <tr>
+                    <td class="kiemel">Producer: </td>
+                    <td>Neal H. Moritz</td>
+                </tr>
+                <tr>
+                    <td class="kiemel">Költségvetés: </td>
+                    <td>38 millió $</td>
+                </tr>
+                <tr>
+                    <td class="kiemel">Nyereség: </td>
+                    <td>207 283 925 $</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
